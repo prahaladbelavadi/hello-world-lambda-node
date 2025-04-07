@@ -1,0 +1,21 @@
+{
+  "name": "hello-world-lambda",
+  "version": "1.0.0",
+  "description": "Hello World Lambda with API Gateway",
+  "main": "dist/hello-world.js",
+  "scripts": {
+    "build": "tsc && cp package.json dist/ && cd dist && npm install --production",
+    "test": "jest",
+    "deploy": "sam build && sam deploy"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.128"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+} 
